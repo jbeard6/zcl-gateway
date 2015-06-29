@@ -40,6 +40,10 @@ public final class FrameType {
         return controlValue;
     }
 
+    public boolean isReserved() {
+        return this == RESERVED_2 || this == RESERVED_3;
+    }
+
     @Override public boolean equals(Object o) {
         if(this == o)
             return true;
